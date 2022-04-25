@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformaciones en CSS</title>
+    <style>
+        /*Translate():Mueve un elemento de un punto a otro*/
+        /*scale():Aumenta o reducen el tamañao de un elemento*/
+        /*Rotate():Giran el elemtno de grados indicado*/
+        /*Skew():Establecen un angulo para torcer o inclinar un elemento*/
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            float: left;
+        }
+
+        #trasladar{
+            background: #1aa9ed;
+            transform: translate(50px, 320px);
+        }
+
+        #escalar{
+            background: #00dd73;
+            transform: scale(1,2);
+        }
+
+        #rotar{
+            background: #ef7f1a;
+            transform: rotate(120deg) ;
+        }
+        #deformar{
+            background: #d1308c;
+            transform: skew(15deg);        }
+    </style>
+</head>
+<body>
+    <div id="trasladar"></div>
+
+    <div id="escalar"></div>
+
+    <div id="rotar"></div>
+
+    <div id="deformar"></div>
+
+</body>
+</html>

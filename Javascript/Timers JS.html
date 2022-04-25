@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timers JS</title>
+</head>
+<body>
+    <script>
+        //TimeOut
+        /*(function() {
+            function holaMundo(){
+                console.log("Hola Mundo");
+            }
+            setTimeout(holaMundo, 3000);
+            //          funcion, delay(tiempo - ej: 1000=1segundo)
+        }())*/
+
+        //Interval
+        (function() {
+            var contador = 0;
+
+            function holaMundo() {
+                contador++;
+                console.log(contador);
+
+                if(contador == 10){
+                    clearInterval(repeticion);
+                }
+            }
+
+            var repeticion = setInterval(holaMundo, 1000);
+            //          funcion, tiempo(la va a ejecutar de forma infinita)
+        }())
+    </script>
+</body>
+</html>

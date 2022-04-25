@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia HTML</title>
+</head>
+<body style="padding: 10px;">
+    <!--Imagen-->
+    <img src="imagen.jpg" alt="Imagen">
+    <!--Imagenes Combinadas-->
+    <figure>
+        <img src="imagen.jpg" alt="" width="300">
+        <img src="imagen.jpg" alt="" width="300">
+        <img src="imagen.jpg" alt="" width="300">
+        <figcaption>Desarrollo web desde cero</figcaption>
+    </figure>
+
+    <!--Videos-->
+    <video src="" controls autoplay lopp poster="imagen.jpg"></video>
+
+    <!--Subtitulos en video-->
+    <video controls>
+        <source src=".mp4">
+        <source src=".avi">
+        <source src=".avi">
+        <track src="" srclang="es" label="Español" default>
+        <track src="" srclang="en" label="Ingles" default>
+        <track src="" srclang="fr" label="Frances" default>
+    </video>
+    <!--Videos de Youtube-->
+    <!--Compartir en youtube y luego insertar video copiamos enlace y lo ponemos en la url del iframe-->
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/c0i88t0Kacs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+    <br>
+
+    <!--Audio-->
+    <audio src="" contorls lopp autoplay></audio>
+
+</body>
+</html>

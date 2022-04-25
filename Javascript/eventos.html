@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos JS</title>
+</head>
+<body>
+  
+    <button id="boton">Click Aquí</button>
+    <br><br>
+    <a id="enlace" href="https://www.google.com">Mi enlace</a>
+    <br><br>
+    <input id="input" type="text">
+    <br><br><br><br>
+    <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">Mas eventos aqui</a>
+
+    <script>
+        //Eventos con un Boton
+        /*(function() {
+
+            var holaMundo = function () {
+                console.log("Hola Mundo!");
+            }
+
+            var boton = document.getElementById("boton");
+            boton.addEventListener("click", holaMundo);
+           
+        }())
+*/
+        //Eventos para input
+        /*(function() {
+
+                var holaMundo = function () {
+                    console.log("Hola Mundo!");
+            }
+
+            var input = document.getElementById("input");
+            input.addEventListener("keypress", holaMundo);
+
+        }())*/
+
+        //Saber el tipo de evento
+
+             /*(function() {
+
+                var holaMundo = function (e) {
+                console.log("El evento que se esta ejecutando es: " + e.type);
+                }
+
+                var boton = document.getElementById("boton");
+                boton.addEventListener("click", holaMundo);
+
+                }())*/
+
+    
+              (function() {
+
+                var holaMundo = function (e) {
+                console.log("El evento que se esta ejecutando es: " + e.target);
+                e.preventDefault(); //predefinido desactiva el enlace
+                }
+
+                var boton = document.getElementById("enlace");
+                boton.addEventListener("click", holaMundo);
+
+                }())
+
+    </script>
+</body>
+</html>

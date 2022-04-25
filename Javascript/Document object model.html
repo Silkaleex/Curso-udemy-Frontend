@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Javascript</title>
+    <script>
+        //Es la estructura de nuestro sitio web conformada en nodos.De forma jerárquica y arbolera para poder acceder a los elementos con javascript
+        //Los elementos HTML estan incluidos en el interior de una variable llamada document, representa a toda la pagina HTML donde nos encontramos
+        //si queremos acceder a un elementos. Para ello, se suele intentar identificar el elemento a traves el od o la clase
+    </script>
+</head>
+<body>
+        <h1 id="titulo">Titulo de Mi Página Web</h1>
+
+        <div id="subtitulo"></div>
+
+        <p class="miparrafo">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, unde explicabo quaerat commodi perferendis deleniti! Aliquam ipsam tenetur, aliquid corrupti, optio necessitatibus voluptate nesciunt placeat, natus quod blanditiis nisi culpa.
+            Deleniti mollitia laboriosam voluptatem beatae dolores aperiam iusto sunt quas consectetur labore eum dolore, reprehenderit est facilis tempora minus quidem error tenetur ab non sit laudantium asperiores maxime. Placeat, perspiciatis.
+            Voluptatum incidunt doloribus corrupti quibusdam cupiditate dolores molestias expedita quam ut veritatis quod, quae, iste adipisci? Fugiat tempora est architecto in temporibus laudantium soluta sint? Ducimus esse in accusantium sequi?
+            Reiciendis similique labore voluptas quibusdam velit, consequatur tenetur cumque nobis recusandae deleniti ut perferendis veritatis excepturi repellat architecto delectus laborum aperiam? Culpa, voluptatum quos modi fugiat voluptate officiis sapiente iste.
+            Soluta voluptas sit, magnam maxime magni nulla doloremque eos aut voluptatem ipsum adipisci voluptatibus placeat voluptatum perferendis quidem, delectus ea aspernatur alias vel? Aliquam, repellendus beatae quam dolores maxime non.
+        </p>
+
+        <p id="elemento">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum optio repellat eaque ratione ex at ullam perferendis nemo nobis, fuga hic inventore, provident temporibus nesciunt ducimus dolorem atque illo architecto.
+            Recusandae ea voluptatibus deserunt odio quaerat sapiente nesciunt porro nulla nihil necessitatibus. Excepturi ex quia similique, sit atque aliquam id eius nisi perspiciatis ratione eligendi commodi amet officia vitae suscipit.
+            Aliquam deserunt repellat ipsa vero earum enim. Nemo blanditiis illum dolor dolorem enim nulla iusto, illo eveniet, non, quisquam tenetur tempore quos explicabo obcaecati! Inventore, porro! Deleniti distinctio voluptas recusandae!
+            Voluptatem molestias dolor sapiente ipsum impedit non libero sit voluptatibus iure! Eos provident voluptates saepe hic natus totam minus consequuntur eum, enim vel, nostrum id possimus nam, rerum rem inventore.
+            Et veritatis itaque ipsa corporis nihil iusto reprehenderit culpa repellendus accusamus, recusandae optio libero temporibus deleniti beatae eum ex atque voluptatibus sit adipisci doloribus veniam fugit. Nisi nam ab ut?
+        </p>
+
+        <p class="miparrafo">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi nihil quae rem dignissimos possimus eaque, assumenda quia! Voluptas, aliquam eveniet eum dolores vel dolor expedita placeat numquam itaque mollitia at.
+            Optio minima ipsa architecto delectus velit! Fuga illum similique amet ad necessitatibus, optio quas incidunt ea quam distinctio, delectus earum expedita non dolorum doloribus nobis qui sed dolore ab quibusdam!
+            Illo modi dolores, facere quo, quidem consequatur, ipsa provident placeat dolore eum fugit deserunt officiis reiciendis laborum inventore minima tenetur necessitatibus soluta tempora repellat ipsam in totam maiores. Ratione, perspiciatis!
+            Porro rem quia dolores optio amet magnam accusamus consequuntur praesentium labore, ab, aspernatur animi maiores molestiae quos illum neque cupiditate nihil qui odio esse eaque facere aperiam tempore. Quidem, non.
+            Pariatur ratione similique, consequuntur iure dolor vitae blanditiis, ea nesciunt error voluptatem, inventore sint cum incidunt repellendus quidem. Consectetur nulla accusamus aspernatur delectus ducimus autem? Molestiae officia veritatis at! Molestiae.
+        </p>
+
+        <script>
+            // Acceder a elementos con el Dom
+
+            var parrafos = document.getElementsByTagName("p");
+            var elemento1 = document.getElementById("elemento");
+            var elementoClase = document.getElementsByClassName("miparrafo");
+
+            //crear un elemento de forma dinámica 
+                //Crear un nuevo nodo en el Dom
+                    //1.Crear Elemento
+                    var nuevo = document.createElement("h3");
+
+                    //2.Crear el contenido
+                    var contenido = document.createTextNode("Este es mi nuevo elemento");
+
+                    //3.Juntar el elemento creado con el contenido
+                    nuevo.appendChild(contenido);
+
+                    //4.Agregar nuevo elemento creando a mi documento
+                    document.getElementById("subtitulo").appendChild(nuevo);
+
+                    //5. Crear Atributos
+                    nuevo.setAttribute("class", "misubtitulo");
+
+        </script>
+    </body>
+</html>

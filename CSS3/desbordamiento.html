@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desbordamiento CSS</title>
+    <style>
+        p{
+            margin: 0;
+        }
+        #desbordamiento{
+            width: 200px;
+            height: 200px;
+            background-color: #ffdb39;
+
+            /*Desbordamiento*/
+            overflow: auto;
+        }
+        #despliege{
+           column-count: 3 ; 
+           column-gap: 5em;
+           column-rule: 5px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="desbordamiento">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, iste. Deserunt similique perspiciatis aut, cupiditate ducimus laborum alias voluptate saepe? Reprehenderit nobis, saepe obcaecati adipisci at praesentium velit perspiciatis quasi?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit laboriosam, odit dolores harum animi aliquam reprehenderit iusto repudiandae adipisci voluptate corrupti laborum porro? Maiores tempora soluta repellendus natus exercitationem alias?</p>
+    </div>
+    <br><br>
+    <hr>
+    <div id="despliege">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facere nemo pariatur nostrum harum vel quod ullam repellendus ab consequuntur, officiis nesciunt et. Molestiae, accusantium delectus fugiat laudantium repellat ipsa!
+        Ea velit quas quisquam in fugiat, inventore at amet nemo maiores, temporibus deserunt perspiciatis quam neque porro, eius quaerat? Temporibus facilis nulla enim iusto quo molestiae quibusdam itaque tempora ratione.
+        Veniam est voluptate distinctio aut error, nisi earum atque, nihil facere excepturi ad magnam? Soluta at, dolorum unde amet laboriosam dolore rem consectetur voluptatem mollitia dolor, neque sapiente repudiandae illum.
+        Molestias totam, vel sint dolores voluptatum ducimus. Sed magnam animi non iure ipsum odio praesentium. Facere in vel impedit rerum velit rem, minus debitis a perspiciatis aliquid dolore consequuntur atque?
+        Assumenda necessitatibus sapiente quibusdam magni nemo. Veniam earum sint accusamus recusandae fugit, placeat natus repellat est, hic perferendis molestiae. Consequuntur nulla fugiat voluptates repudiandae enim optio a magni quo veniam.</p>
+    </div>
+</body>
+</html>

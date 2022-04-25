@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid CSS3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        body{
+            background-color: #eee;
+            color: #393e4d;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1{
+            text-align: center;
+            padding: 20px 0;
+            font-size: 55px;
+        }
+
+        .grid{
+            width: 90%;
+            max-width: 1000px;
+            border: 10px solid #393e4d;
+            margin: auto;
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            /* fr = fracciones es una de dar tamaños es la que mas se suele usar en este comando grid-template*/
+            grid-template-rows: 1fr 2fr;
+            /*grid gap da espacio entre columnas*/
+            grid-gap: 20px;
+        }
+
+        .grid div{
+            display: block;
+            padding: 20px;
+            color: #fff;
+            background-color: #2cbab5;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        h2{
+            text-align: center;
+            padding: 20px 0;
+            font-size: 55px;
+        }
+
+        .columnas div{
+            display: block;
+            padding: 20px;
+            color: #fff;
+            background-color: #2cbab5;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .columnas{
+            width: 90%;
+            max-width: 1000px;
+            border: 10px solid #393e4d;
+            margin: auto;
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            /* fr = fracciones es una de dar tamaños es la que mas se suele usar en este comando grid-template*/
+            grid-template-rows: 1fr 2fr;
+            /*grid gap da espacio entre columnas*/
+            grid-gap: 20px;
+        }
+
+        .columnas{
+            display:grid;
+            grid-template-columns: 300px repeat(3,1fr);
+            grid-template-rows: minmax(auto, auto);
+            grid-gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fundamentos CSS GRID</h1>
+    </header>
+
+    <div class="grid">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+    </div>
+    <br><br>
+
+    <h2>Columnas</h2>
+
+    <div class="columnas">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+</div>
+</body>
+</html>

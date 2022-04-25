@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage y sesion Storage</title>
+</head>
+<body>
+    <script>
+         /*
+        //Local storage Guarda informacion en la PC del Usuario
+        //Sesion storage guarda informacion por sesion es un poco mas volatil
+        //No todos los navegadores lo soportan,como saberlo console en el navegador y typeof(Storage) si pone undefined no lo soporta en el navegador
+
+        //LocalStorage
+
+        //Metodo 1
+       // localStorage.nombre = "Alejandro Pascual";
+
+        //Metodo 2
+        //localStorage.setItem('nombre', 'Alejandro Pascual');
+
+        //Muestra en pantalla
+        //document.write(localStorage.nombre);
+
+       Esto lo guarda dentro de nuestro PC aunque borremos los dos metodos anteriores
+
+        //Eliminar elemento
+        localStorage.removeItem('nombre');
+        */
+
+        //Session Storage
+        sessionStorage.nombre = 'Alejandro Pascual';
+        document.write(sessionStorage.nombre);
+
+    </script>
+</body>
+</html>

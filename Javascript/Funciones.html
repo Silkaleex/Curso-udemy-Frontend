@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones JS</title>
+</head>
+<body>
+    <script>
+        //No esta bien echo, es un fragmento de valor que me de un codigo por ejemplo que haya una suma y me devuelve el resultado y lo muestro en pantalla
+        //Function es un fragmento de codigo que se puede reutilizar que debe retornar un valor y que debe ejecutar una accion.
+        function holaMundo(){
+            //Instrucciones
+            document.write("Hola Mundo" + "<br>" + "<br>");
+        }
+
+        holaMundo();
+        //Parametros son valores que yo le pongo a esa funcion y dentro de esa funcion van a trabajar como una variable
+        //return = Devolver obtiene el resultado y lo devuelve
+        //Una funcion mas alla de un codigo especifico tiene que tener un valor
+       //function reutiliza y debe retornar un valor y que debe realizarme una accion
+        /*var resta = function (valor1, valor2){
+            var resultado = valor1 - valor2;
+            return resultado;
+        }
+
+        document.write( resta(100, 30) );*/
+
+        //Almacena el valor1 y almacena el valor2
+
+        //Variable Global, disponible en cualquier funcion o codigo
+        var variableGlobal = "Hola Mundo";
+
+        //variable Local solo se puede usar dentro de una function
+        var valorMinimo = function (valor1, valor2) {
+
+            var variableLocal = "Esto es una variable Local";
+
+            if(valor1 < valor2){
+                return valor1;
+            }
+            else{
+                return valor2;
+            }
+        }
+
+        document.write(valorMinimo(50, 80));
+        document.write("<br>" + "<br>");
+        document.write(valorMinimo(20, 400));
+
+    </script>
+</body>
+</html>

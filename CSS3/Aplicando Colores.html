@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicando colores</title>
+    <style>
+        div{
+
+            width: 200px;
+            height: 200px;
+
+            /*Palabra Clave*/
+            background-color: red;
+
+            /*Hexadecimal*/
+            background-color: #00afdb;
+
+            /*RGB*/
+            background-color: rgb(0, 250, 21);
+
+            /*HSL*/
+            background-color: hsl(250deg, 30%, 50%);
+
+            /*Transparencia*/
+            background-color: transparent;
+            background-color: #7900db50;
+            background-color: rgba(0, 255, 3, 0.8);
+            background-color: hsla(250deg, 30%, 50%, 80%);
+            /*En background color si le aplicas los dos ultimos numeros se le aplica el porcentaje de transaparencia a ese color*/
+            /*rgba y hsla aplica la transparencia al color*/
+
+            /*Degradado*/
+            background:linear-gradient(120deg, blue, green);
+            background:radial-gradient(lawngreen,blue,yellow);
+
+        }
+        #cuadrado2{
+            background:linear-gradient(90deg, blue, green);
+        }
+    </style>
+</head>
+<body>
+    <!--Color , backgroundColor-->
+    <!--Medidas de colores hexadecimal, Palabra Clave, RGBA, HSL, Transparencia, Degradado-->
+    <div></div>
+    <br>
+    <div id="cuadrado2"></div>
+
+</body>
+</html>

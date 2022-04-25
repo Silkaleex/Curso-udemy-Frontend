@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID 4 CSS3</title>
+    <style>
+        body{
+            background-color: chocolate;
+            margin: 100px;
+        }
+        h1{
+            background-color: rgb(150, 94, 94);
+            border-top: 100px;
+            border: 5px solid black;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            width: 500px;
+            height: auto;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+        }
+        .grid div{
+            text-align: center;
+            background-color: rgb(141, 52, 52);
+            font-size: 35px;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            margin-left: 30%;
+        }
+        .grid{
+            padding: 5%;
+            border: 20px groove rgb(255, 145, 0);
+            background-color: rgb(241, 184, 108);
+            margin: 0 auto;
+            width: 800px;
+            height: 800px;
+            display:grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 200px);
+
+            /*Alinear Horizontalmente*/
+            justify-content:space-around;
+
+            /*Alinear Verticalmente*/
+            align-content: space-between;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alineacion de Grupo de css Grid</h1>
+    </header>
+
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+</html>

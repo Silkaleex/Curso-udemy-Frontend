@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de datos</title>
+</head>
+<body>
+    <script>
+        //tipos de datos
+
+        //Numericos - enteros/integer y decimales/float.
+        var edad = "26";//Entero
+        var decimal = 26.35;
+
+        //operaciones
+        var suma = 5 + 30;
+        var multiplicacion = 4*8;
+
+        //String - Cadenas de texto, caracteres.
+        var nombre = "Alejandro";
+        var apellido = "Pascual";
+
+        var completo = nombre + " " + apellido;
+        alert('completo');
+
+        //Array - Arreglos:conjunto de elementos
+        var amigos = ["Alejandro", "Ramon", "Juan Carlos", "Juan Antonio", "Manolo"];
+        document.write(amigos[0] + "<br>" + "<br>"  );
+
+        //Object - Estructura más compleja 'Este tipo de objetos se usa por Ejemplo en Plugins'
+        var objeto = {
+            color: "Black",
+            size:12
+        }
+        //Boolean - valores verdaderos o falsos
+        var booleano = true;
+
+        //undefined - sin valor
+        var sinvalor;
+        sinvalor = 36 + 33;
+        //Los valores numericos nunca ponerles comillas por que va a detectar un valor de tipo string
+        document.write('Suma de sinvalor' + "<br>");
+        document.write("<br>" + sinvalor + "<br>");
+
+        //Full - vacio 'Se utiliza por ejemplo para borrar un valor'
+        var numero = 10;
+        var numero = null;
+
+        //NaN - valor invalido
+        var texto1 = "Hola Mundo";
+        document.write('<br>' + 'Valor NaN en pantalla' + '<br>')
+        document.write('<br>' + texto1 * 3);
+    </script>
+    <!--Lenguaje dinámico, automáticamente detecta el tipo de dato-->
+
+    <!--Tipos de Datos-->
+
+    <!--Number: valor numérico(enteros, decimales, etc)-->
+    <!--String: valor de texto(cadenas de texto,caracteres, etc...)-->
+    <!--Booleano: valores verdadero o falso-->
+    <!--Undefined: valor sin definir-->
+    <!--Function: Function guardada en una variable-->
+    <!--Object: Estructura mas compleja-->
+
+    
+</body>
+</html>

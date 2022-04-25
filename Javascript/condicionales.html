@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales JS</title>
+</head>
+<body>
+    <script>
+        var nombre = "Pedro"
+        var edad = 18;
+
+/*
+        //si se cumple la condicion
+        if(edad == 26){
+            //Si se cumple
+            document.write("Si se cumple mi condicion");
+        }
+        //segunda pregunta o condicion
+        else if(nombre == "Alejandro"){
+            document.write(" Si se cumple mi condicion, mi nombre es: " + nombre);
+
+        }
+        //No se cumple ninguna de las anteriores
+        else{
+            //Si no se cumple
+            document.write("No se cumple mi condicion");
+        }
+*/
+
+/*      IMPORTANTISIMO!!!!
+        > Mayor
+        < Menor
+        >= Mayor o igual
+        <= Menos o igual
+        == Igual que
+        === Comprobando que la variable tenga el valor y sea del mismo tipo
+        != Distinto
+        && Operador Logico de AND (Si es necesario) =)
+        ||operador Logico de OR (no es necesario) =)
+*/
+        if(edad <= 40 && nombre == "Jorge"){
+            document.write("Puedes entrar");
+        }
+        else if(edad == 40 && nombre == "Pedro"){
+            document.write("Cumples con los requisitos")
+        }
+        else{
+            document.write("No puedes entrar")
+        }
+  
+
+    </script>
+</body>
+</html>

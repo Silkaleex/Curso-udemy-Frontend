@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones CSS3</title>
+    <style>
+       
+
+        /* Paso 1 Key Frame */
+        @keyframes cambiarColor{
+            0%{
+                background: green;
+            }
+            20%{
+                background: blue;
+            }
+            40%{
+                background:orange;
+            }
+            60%{
+                background: yellow;
+            }
+            80%{
+                background: purple;
+            }
+            100%{
+                background: red;
+            }
+        }
+
+        /* Paso 2 Aplicar Propiedades de animacion*/
+        .ani{
+            width: 400px;
+            height: 400px;
+            background: gray;
+            margin: auto;
+            margin-top: 50px;
+
+            animation-name: cambiarColor;
+            animation-duration: 10s;
+            animation-delay: 0.5s;
+            animation-iteration-count: 2;
+            animation-direction: normal;
+            /*forwards: se queda en la ultima animacion, backwards: se queda al principio de la animacion*/
+            animation-fill-mode: backwards;
+            animation-play-state: paused;
+
+            /*ATAJO keyframe duracion retroceso interaccion direccion relleno reproduccion*/
+            animation: cambiarColor 10s 0.5s 2 normal backwards paused;
+        }
+
+        .ani:hover{
+            animation-play-state: running;
+        }
+       
+      
+
+       
+    </style>
+</head>
+<body>
+    <div class="ani"></div>
+</body>
+</html>

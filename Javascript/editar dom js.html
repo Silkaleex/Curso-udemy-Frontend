@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Dom JS</title>
+</head>
+<body>
+    <ol id="lista">
+        <li id="uno">Casi Miro </li>
+        <li>Pepito Perez</li>
+    </ol>
+    <script>
+        //Editar contenido
+        var primerElemento = document.getElementById("uno");
+       
+            //Metodo1
+            /*primerElemento.innerHTML = "<i>Nuevo Elemento</i>";*/ //Toma en cuenta las etiquetas
+
+            //Metodo2
+            /*primerElemento.textContent = "<i>Nuevo Elemento de texto</i>"*/ //No toma en cuenta las etiquetas
+       
+            //Descomenta cada elemento para ver la respuesta de cada una de ellas
+
+        //Reemplazar elemento
+        var elemento = document.createElement("li");
+        var contenido = document.createTextNode("Alejandro Pascual");
+        elemento.appendChild(contenido);
+
+        var contenedor = document.getElementById("lista");
+        var posicion = document.getElementsByTagName("li")[0];
+
+        /*contenedor.replaceChild(elemento, posicion);*/
+        
+        //Eliminar elemento
+        contenedor.removeChild(posicion);
+    </script>
+</body>
+</html>

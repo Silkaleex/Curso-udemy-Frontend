@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos JS</title>
+</head>
+<body>
+    <script>
+        //Declarar Arregleo
+        //                  0             1         2         3         4
+        var colores = [" amarillo ", " verde ", " azul ", " rojo ", " gris "];
+
+        //Metodos Mas Utilizados
+
+            //Acceder y cambiar elementos del arreglo
+                    /*colores[5] = " negro ";
+                    colores[6] = " purpura ";
+
+                    document.write(colores);*/
+
+                //Metodo 1
+                 /*var longitudArreglo = colores.length;//Longitud de mi arreglo
+                 colores[longitudArreglo] = " purpura ";
+                 document.write(colores);*/
+                 
+                 //Metodo 2
+                 /*colores.push(" rosa ", " blanco ", " naranja ");
+                 document.write(colores);*/
+
+            //Eliminar elementos
+            /*colores.pop();
+            document.write(colores);*/
+
+            /*Pop elimina cualquier elemento de nuestro array selecionandolo mediante[]*/
+            
+            //Concatenar Arreglos
+            /*var colores = [" amarillo ", " verde ", " azul ", " rojo ", " gris "];
+            var colores2 = [" rosa ", " naranja ", " blanco ", " purpura "];
+            
+            var coloresTotales = colores.concat(colores2);
+            document.write(coloresTotales*/
+
+            /*Concatenar une ambas variables en este caso colores y colores 2 con concat*/
+           
+            //Cambiar estilo de arreglo
+            /*var colores = [" amarillo ", " verde ", " azul ", " rojo ", " gris "];
+            var arregloMejorado = colores.join(" - ");
+            
+            document.write(arregloMejorado);*/
+
+            /*join modifica el estilo en este caso la , por un -*/
+
+            //Ordenar Alfabeticamente
+            var arregloOrdenado = colores.sort();
+            document.write(arregloOrdenado);
+
+            /*sort ordena alfabetidcmante los arrays*/
+    </script>
+</body>
+</html>

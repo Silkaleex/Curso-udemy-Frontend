@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones CSS</title>
+    <style>
+        /*Transicion: es un cambio de rotacion que hace que no sea tan rapida, que los elementos no cambien de una forma abruptera y asi el usuario pueda ver los cambios o la animacion*/
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 70px;
+            float: left;
+        }
+
+        .elemento1{
+            background: #1aa9ed;
+        }
+
+        .elemento1:hover{
+            transform: rotate(130deg);
+            background: blue;
+        }
+
+        .elemento-transicion{
+            background: #00dd73;
+            transition-property: all;
+            transition-duration: 1s; 
+            /*delay espera x segundos a hacer la transicion
+            transition-delay:1s;*/
+            /**/
+
+            /*Atajo - propiedad - duracion - timing - delay*/
+            transition: all 1s ease-out 0.3s;
+        }
+
+        .elemento-transicion:hover{
+            background: green;
+            transform: rotate(130deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="elemento1"></div>
+
+    <div class="elemento-transicion"></div>
+    <br><br><br><br>
+    <h1>Mas Informacion</h1>
+    <br>  
+    <a href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_animation-timing-function&preval=ease" target="_blank">Pulsar Aqui</a>
+
+</body>
+</html>
